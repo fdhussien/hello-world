@@ -10,7 +10,7 @@ var server = http.createServer(function(req, res){
 		res.writeHead(200, {'Content-Type':'text/html'});
 		fs.createReadStream(__dirname + '/contact.html').pipe(res);
 	} else if(req.url === '/api/ninjaaa'){
-		var ninjas = [{name: 'peter', age: 18}, {name: 'parker', age: 32}];
+		var ninjas = [{name: 'faiza', age: 21}, {name: 'parker', age: 32}];
 		res.writeHead(200, {'Content-Type' : 'application/json'});
 		res.end(JSON.stringify(ninjas));
 	} else{
